@@ -5,6 +5,8 @@ import {
 } from "@react-three/drei";
 import { Suspense } from "react";
 import { FloatingIsland } from "./FloatingIsland";
+import { Portal } from "./Portal";
+import { Rocks } from "./Rocks";
 
 export function SceneContainer() {
   return (
@@ -26,6 +28,8 @@ export function SceneContainer() {
       <OrbitControls target={[1, 5, 0]} maxPolarAngle={Math.PI * 0.5} />
 
       <FloatingIsland />
+      <Rocks />
+      <Portal />
     </Suspense>
   );
 }
