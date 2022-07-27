@@ -5,8 +5,10 @@ import {
 } from "@react-three/drei";
 import { Suspense } from "react";
 import { FloatingIsland } from "./FloatingIsland";
+import { FloatingRocks } from "./FloatingRocks";
 import { Portal } from "./Portal";
 import { Rocks } from "./Rocks";
+import { Trees } from "./Trees";
 
 export function SceneContainer() {
   return (
@@ -30,6 +32,8 @@ export function SceneContainer() {
       <FloatingIsland />
       <Rocks />
       <Portal />
+      <FloatingRocks />
+      <Trees />
     </Suspense>
   );
 }
