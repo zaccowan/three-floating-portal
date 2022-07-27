@@ -1,14 +1,17 @@
 import {
   OrbitControls,
   PerspectiveCamera,
-  Environment
+  Environment,
+  Float
 } from "@react-three/drei";
 import { Suspense } from "react";
 import { FloatingIsland } from "./FloatingIsland";
 import { FloatingRocks } from "./FloatingRocks";
+import { Grass } from "./Grass";
 import { Portal } from "./Portal";
 import { Rocks } from "./Rocks";
 import { Trees } from "./Trees";
+import { Words } from "./Words";
 
 export function SceneContainer() {
   return (
@@ -29,11 +32,15 @@ export function SceneContainer() {
       />
       <OrbitControls target={[1, 5, 0]} maxPolarAngle={Math.PI * 0.5} />
 
-      <FloatingIsland />
-      <Rocks />
-      <Portal />
+      <Float speed={0.5} rotationIntensity={0.6} floatIntensity={0.6}>
+        <FloatingIsland />
+        <Rocks />
+        <Portal />
+        <Trees />
+        <Words position={[0, 10, 0]} />
+        <Grass />
+      </Float>
       <FloatingRocks />
-      <Trees />
     </Suspense>
   );
 }
