@@ -1,19 +1,18 @@
 {
-  "name": "react",
+  "name": "three-floating-portal",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@react-three/drei": "9.17.3",
     "@react-three/fiber": "8.2.2",
     "@react-three/postprocessing": "2.5.5",
+    "dotenv": "16.0.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-scripts": "4.0.0"
+    "react-scripts": "4.0.0",
+    "three": "0.142.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
