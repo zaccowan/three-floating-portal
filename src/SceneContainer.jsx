@@ -10,11 +10,11 @@ export function SceneContainer() {
     <Suspense>
       <Environment
         background={"only"}
-        files={process.env.PUBLIC_URL + "textures/bg.hdr"}
+        files={"textures/floating-portal-bg.hdr"}
       />
       <Environment
         background={false}
-        files={process.env.PUBLIC_URL + "textures/envmap.hdr"}
+        files={"textures/floating-portal-envmap.hdr"}
       />
 
       <PerspectiveCamera
